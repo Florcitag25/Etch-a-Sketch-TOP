@@ -1,0 +1,24 @@
+html,body{
+    height: 100%;
+    margin: 0;
+
+}
+
+.container{
+    height: 960px;
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child{
+    height: 60px;
+    width: 60px;
+    outline: 1px solid black;
+}
+
+.black{
+    background-color: black;
+    outline: 1px solid white;
+}
