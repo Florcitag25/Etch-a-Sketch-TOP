@@ -1,15 +1,21 @@
-html,body{
+body{
     height: 100%;
-    margin: 0;
-
+    background-color: #AFD198;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
 }
 
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .container{
     height: 960px;
     width: 960px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    outline: 1px solid black;
 }
 
 .child{
@@ -22,3 +28,48 @@ html,body{
     background-color: black;
     outline: 1px solid white;
 }
+
+
+.squares,
+.container,
+h1{
+    margin: 0 auto;
+}
+
+.bn632-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn28 {
+    background-image: linear-gradient(
+      to right,
+      #AFD198,
+      #f15e64,
+      #e14e53,
+      #AFD198
+    );
+    box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  }
